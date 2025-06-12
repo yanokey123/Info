@@ -1,0 +1,137 @@
+/* Fullscreen background GIF */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Courier New', monospace;
+  background: url('background.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: #00ff00;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Optional overlay for better text readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -3;
+}
+
+/* Matrix Canvas Animation */
+#matrixCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  background: transparent;
+}
+
+/* Container Styling */
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid #00ff00;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ff00;
+  z-index: 1;
+  position: relative;
+}
+
+/* Profile Picture */
+.profile-pic {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 3px solid #00ff00;
+  box-shadow: 0 0 10px red;
+  object-fit: cover;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  text-shadow: 0 0 5px red, 0 0 10px #00ff00;
+}
+
+/* Intro Text */
+.intro {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Headings */
+h2 {
+  border-left: 5px solid red;
+  padding-left: 10px;
+  color: #00ff00;
+  text-shadow: 0 0 5px red;
+  font-size: 18px;
+}
+
+/* Info List */
+.info {
+  list-style: square;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: black;
+  background-color: #00ff00;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid red;
+  box-shadow: 0 0 10px #00ff00;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background-color: red;
+  color: white;
+  box-shadow: 0 0 15px red;
+}
+
+/* Disclaimer & Footer */
+.disclaimer {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+  color: #00ff00;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #00ff00;
+  text-shadow: 0 0 5px red;
+  margin-top: 20px;
+}
